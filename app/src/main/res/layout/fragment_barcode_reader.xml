@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.BarcodeReader">
+
+    <data>
+
+        <variable
+            name="barcodeReaderFragment"
+            type="com.example.androidbarcode.fragments.BarcodeReader" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:barrierAllowsGoneWidgets="true"
+            app:implementationMode="compatible" />
+
+        <com.king.zxing.ViewfinderView
+            android:id="@+id/viewfinderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cornerColor="@color/red"
+            app:frameColor="@color/orange"
+            app:frameHeight="180dp"
+            app:frameRatio="0.9"
+            app:gridColumn="40"
+            app:gridHeight="0dp"
+            app:labelTextSize="14sp"
+            app:labelTextWidth="180dp"
+            app:laserColor="@color/green"
+            app:laserStyle="line"
+            app:maskColor="@color/barcode_background" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/zoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:backgroundTint="?attr/colorPrimary"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/zoom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/zoom"
+            app:srcCompat="@drawable/ic_zoom_out"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/app_name" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/zoom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:stepSize="10.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/zoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:backgroundTint="?attr/colorPrimary"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/zoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/zoom"
+            app:srcCompat="@drawable/ic_zoom_in"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/app_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

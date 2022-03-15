@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.androidbarcode.fragments.HomeFragment"
+        android:label="TogiTech Barcode "
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_barcodeReader"
+            app:destination="@id/barcodeReader" />
+        <action
+            android:id="@+id/action_homeFragment_to_QRCreateFragment"
+            app:destination="@id/QRCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/barcodeReader"
+        android:name="com.example.androidbarcode.fragments.BarcodeReader"
+        android:label="Scan Barcode"
+        tools:layout="@layout/fragment_barcode_reader">
+        <action
+            android:id="@+id/action_barcodeReader_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_barcodeReader_to_barcodeResultFragment"
+            app:destination="@id/barcodeResultFragment" />
+        <action
+            android:id="@+id/action_barcodeReader_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/barcodeResultFragment"
+        android:name="com.example.androidbarcode.fragments.BarcodeResultFragment"
+        tools:layout="@layout/fragment_barcode_result">
+        <action
+            android:id="@+id/action_barcodeResultFragment_to_showBarcodeImage"
+            app:destination="@id/showBarcodeImage" />
+        <action
+            android:id="@+id/action_barcodeResultFragment_to_barcodeReader"
+            app:destination="@id/barcodeReader" />
+    </fragment>
+    <fragment
+        android:id="@+id/showBarcodeImage"
+        android:name="com.example.androidbarcode.fragments.ui.ShowBarcodeImage"
+        tools:layout="@layout/fragment_show_barcode_image" >
+        <action
+            android:id="@+id/action_showBarcodeImage_to_barcodeResultFragment"
+            app:destination="@id/barcodeResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRCreateFragment"
+        android:name="com.example.androidbarcode.fragments.QRCreateFragment"
+        android:label="QR Code Create"
+        tools:layout="@layout/fragment_qrcode_create" >
+        <action
+            android:id="@+id/action_QRCreateFragment_to_textCodeCreate"
+            app:destination="@id/textCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_linkCodeCreate"
+            app:destination="@id/linkCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_wifiCodeCreate"
+            app:destination="@id/wifiCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_geoCodeCreate"
+            app:destination="@id/geoCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_contactCardCreate"
+            app:destination="@id/contactCardCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_phoneCodeCreate"
+            app:destination="@id/phoneCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_eventCodeCreate"
+            app:destination="@id/eventCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_smsCodeCreate"
+            app:destination="@id/smsCodeCreate" />
+        <action
+            android:id="@+id/action_QRCreateFragment_to_emailCodeCreate"
+            app:destination="@id/emailCodeCreate" />
+    </fragment>
+    <fragment
+        android:id="@+id/textCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.TextCodeCreate"
+        android:label="QR Code Text Create"
+        tools:layout="@layout/fragment_text_code_create" />
+    <fragment
+        android:id="@+id/linkCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.LinkCodeCreate"
+        android:label="Link QR Code"
+        tools:layout="@layout/fragment_link_code_create" />
+    <fragment
+        android:id="@+id/wifiCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.WifiCodeCreate"
+        android:label="Wifi QR Code"
+        tools:layout="@layout/fragment_wifi_code_create" />
+    <fragment
+        android:id="@+id/geoCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.GeoCodeCreate"
+        android:label="Geo QR Code"
+        tools:layout="@layout/fragment_geo_code_create" />
+    <fragment
+        android:id="@+id/contactCardCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.ContactCardCreate"
+        android:label="VCard Create"
+        tools:layout="@layout/fragment_contact_card_create" />
+    <fragment
+        android:id="@+id/phoneCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.PhoneCodeCreate"
+        android:label="Phone QR Code"
+        tools:layout="@layout/fragment_phone_code_create" />
+    <fragment
+        android:id="@+id/eventCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.EventCodeCreate"
+        android:label="Event QR Code"
+        tools:layout="@layout/fragment_event_code_create" />
+    <fragment
+        android:id="@+id/smsCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.SmsCodeCreate"
+        android:label="SMS QR Create"
+        tools:layout="@layout/fragment_sms_code_create" />
+    <fragment
+        android:id="@+id/emailCodeCreate"
+        android:name="com.example.androidbarcode.fragments.qrcode.EmailCodeCreate"
+        android:label="Email QR Code"
+        tools:layout="@layout/fragment_email_code_create" />
+</navigation>

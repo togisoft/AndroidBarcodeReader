@@ -1,0 +1,71 @@
+package com.example.androidbarcode.adaptor.setposition
+
+import android.app.Activity
+import android.content.Context
+import android.view.View
+import android.widget.Toast
+import com.example.androidbarcode.helper.copyClipboard
+import com.example.androidbarcode.helper.searchOnWeb
+import com.example.androidbarcode.helper.sendText
+import com.example.androidbarcode.model.BarcodeResultModel
+
+
+fun otherPosition(
+    position: Int,
+    context: Context,
+    activity: Activity,
+    viewModel: BarcodeResultModel,
+    text: String,
+    view: View
+) {
+    when (position) {
+        0 -> searchOnWeb(activity, text)
+        1 -> sendText(
+            context,
+            activity,
+            text
+        )
+        2 -> copyClipboard(
+            context,
+            activity,
+            text
+        )
+        3 -> createBarcodeSection(viewModel, context, text, view)
+
+        4 -> shareSectionImageBarcode(viewModel, context, text)
+        5 -> saveSectionBarcodeImageGallery(context, viewModel, view, text)
+        6 -> printSectionBarcode(viewModel, context, text, activity)
+        else -> Toast.makeText(context, "Non che", Toast.LENGTH_SHORT)
+            .show()
+    }
+}
+
+
+fun otherPositionQr(
+    position: Int,
+    context: Context,
+    activity: Activity,
+    viewModel: BarcodeResultModel,
+    text: String,
+    view: View
+) {
+    when (position) {
+        0 -> searchOnWeb(activity, text)
+        1 -> sendText(
+            context,
+            activity,
+            text
+        )
+        2 -> copyClipboard(
+            context,
+            activity,
+            text
+        )
+        3 -> qrCodeImage(viewModel, text, context, view)
+        4 -> shareImageQr(context, text)
+        5 -> saveImageGallery(context, text, view)
+        6 -> printQrCode(viewModel, text, context, activity)
+        else -> Toast.makeText(context, "Non che", Toast.LENGTH_SHORT)
+            .show()
+    }
+}

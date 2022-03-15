@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidBarcode/app/src/main/res/drawable/background_shape.xml" value="0.22685185185185186" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/barcode_button_list.xml" value="0.33" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_barcode_create.xml" value="0.33" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_barcode_reader.xml" value="0.22" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_barcode_result.xml" value="0.33" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_contact_card_create.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_email_code_create.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_event_code_create.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_geo_code_create.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_link_code_create.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_phone_code_create.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_qrcode_create.xml" value="0.33" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_scanner_result.xml" value="0.264945652173913" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_search_engine.xml" value="0.24114583333333334" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_show_barcode_image.xml" value="0.22" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_sms_code_create.xml" value="0.25" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_text_code_create.xml" value="0.22301136363636365" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/layout/fragment_wifi_code_create.xml" value="0.33" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/menu/barcode_image_menu.xml" value="0.2" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/menu/barcode_reader_menu.xml" value="0.67" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/menu/barcode_result_menu.xml" value="0.2" />
+        <entry key="..\:/AndroidBarcode/app/src/main/res/xml/filepaths.xml" value="0.2359375" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable-v24/change_camera.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable-v24/focus_on.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable-v24/menu_flash.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable-v24/menu_flash_off.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/background_circle.xml" value="0.3398148148148148" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/background_shape.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/barcode_reader.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/ic_aztec.xml" value="0.259375" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/ic_data_matrix.xml" value="0.259375" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/drawable/ic_pdf417.xml" value="0.259375" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/camera_preview_overlay.xml" value="0.14" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/fragment_barcode_reader.xml" value="0.25" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/fragment_barcode_result.xml" value="0.5" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/fragment_scanner_result.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/layout/graphic_overlay.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/tolga/AndroidStudioProjects/AndroidBarcode/app/src/main/res/menu/barcode_reader_menu.xml" value="0.25" />
+        <entry key="..\:/Users/tolga/Desktop/yazılım/android/Togitech Barcode Reader/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/Users/tolga/Desktop/yazılım/android/Togitech Barcode Reader/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/tolga/Desktop/yazılım/android/Togitech Barcode Reader/app/src/main/res/layout/fragment_home.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/tolga/Desktop/yazılım/android/Togitech Barcode Reader/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1935" />
+        <entry key="..\:/Users/tolga/Desktop/yazılım/android/Togitech Barcode Reader/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1935" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
